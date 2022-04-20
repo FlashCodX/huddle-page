@@ -1,0 +1,144 @@
+.imageBackground{
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.content{
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+  gap: 50px;
+  min-height: 100vh;
+}
+
+
+.pageContent{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap:70px;
+}
+
+.pageContent > img{
+  width: 100%;
+}
+
+.infoContainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.infoContainer > h1{
+  max-width: 550px;
+  font-weight:600;
+  font-size: 3rem;
+}
+
+.infoContainer > p{
+  font-size: 1.4rem;
+  font-weight:100;
+  max-width: 700px;
+}
+
+.infoContainer > button{
+  cursor: pointer;
+  max-width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--violet);
+  transition: .5s;
+}
+
+.infoContainer > button:hover{
+  background: var(--magenta);
+  color: white;
+}
+
+.socialsContainer{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.socialsContainer > div{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius:50% ;
+  font-size: 1.3rem;
+  transition: .5s;
+}
+
+
+.socialsContainer >div:hover{
+  border-color:  var(--magenta);
+  color: var(--magenta);
+}
+
+
+.attribution{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.1rem !important;
+  display: flex;
+  width: fit-content;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.attribution *{
+  font-weight: 900 !important;
+  margin: auto 5px;
+}
+
+.attribution a{
+  color: var(--magenta) !important;
+  font-weight:900;
+  text-decoration: none;
+}
+
+@media (max-width:768px) {
+  .pageContent{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .infoContainer > h1{
+    font-size: 2rem;
+  }
+  .infoContainer > p{
+    font-size: 1rem;
+  }
+  .infoContainer > button{
+    width: 100%;
+    margin: auto;
+  }
+
+  .socialsContainer {
+    justify-content: center;
+  }
+
+  .attribution{
+    display: none;
+    visibility: collapse;
+  }
+
+}
